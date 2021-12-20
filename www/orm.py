@@ -75,7 +75,7 @@ class StringField(Field):
 class BooleanField(Field):
 
     def __init__(self, name=None, default=False):
-        super.__init__(name, 'boolean', False, default)
+        super().__init__(name, 'boolean', False, default)
 
 class IntegerField(Field):
 
@@ -90,7 +90,7 @@ class FloatField(Field):
 class TextField(Field):
 
     def __init__(self, name=None, default=None):
-        super.__init__(name, 'text', False, default)
+        super().__init__(name, 'text', False, default)
 
 
 class ModelMetaclass(type):
